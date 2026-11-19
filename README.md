@@ -6,9 +6,9 @@
 
 ### [2026 嵌入式竞赛 · 无人机移动起降基站](https://github.com/Mind2Real11/embedded-competition-2026)
 
-我在 RK3588 / ELF2 上实现了 **ROS 2 实车建图与自主导航**：Cartographer 2D 生成室内地图，Nav2 驱动麦克纳姆轮底盘按目标点行驶并绕障。我也负责 Qt 触控上位机和 STM32 底盘运动开发。
+我用 **ROS 2、Cartographer 2D 和 Nav2** 实现实车建图、目标点导航与绕障，并负责 Qt 上位机和 STM32 底盘运动。在 **RK3588 / ELF2** 上部署本地大模型，接入 **DeepSeek 和阿里云语音转文字**，用 **MQTT** 联通控制台、ROS 2 和底盘。
 
-[看 ROS 2 实车成果](https://github.com/Mind2Real11/embedded-competition-2026#ros-2-实车成果) · [看比赛视频](https://github.com/Mind2Real11/embedded-competition-2026#比赛视频) · [看我的贡献](https://github.com/Mind2Real11/embedded-competition-2026#我的贡献) · [读技术摘要](https://github.com/Mind2Real11/embedded-competition-2026/blob/main/technical-overview.md)
+[看 ROS 2 实车成果](https://github.com/Mind2Real11/embedded-competition-2026#ros-2-实车成果) · [看 ELF2 端云 AI 与 MQTT](https://github.com/Mind2Real11/embedded-competition-2026#elf2-大模型语音识别与-mqtt) · [看比赛视频](https://github.com/Mind2Real11/embedded-competition-2026#比赛视频) · [看我的贡献](https://github.com/Mind2Real11/embedded-competition-2026#我的贡献) · [读技术摘要](https://github.com/Mind2Real11/embedded-competition-2026/blob/main/technical-overview.md)
 
 <a href="https://github.com/Mind2Real11/embedded-competition-2026#ros-2-实车成果"><img src="https://raw.githubusercontent.com/Mind2Real11/embedded-competition-2026/main/demo-cover.jpg" alt="麦克纳姆轮底盘实车导航，点击查看 ROS 2 实车成果" width="640"></a>
 
@@ -18,4 +18,5 @@
 
 - **机器人软件** · ROS 2、Cartographer 2D、Nav2、MQTT
 - **嵌入式 Linux 与交互** · RK3588 / ELF2、C++、Qt 6、WebEngine、WebChannel
+- **端云 AI** · 板端大模型部署、DeepSeek API、阿里云 DashScope ASR
 - **底层运动控制** · STM32、FreeRTOS、UART、麦克纳姆轮逆运动学
